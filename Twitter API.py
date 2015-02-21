@@ -13,8 +13,20 @@ auth = twitter.oauth.OAuth(OAUTH_TOKEN,
 
 twitter_api = twitter.Twitter(auth=auth)
 
-searchterm = "#airstrike"
-searchcount = 10000
+searchterm = "#ObamaLovesAmerica"
+searchcount = 10
 
 searches = twitter_api.search.tweets(q= searchterm, count = searchcount)
 tweetTextArray = [s['text'] for s in searches['statuses']]
+
+from SentimentApi import analyze_text
+
+for tweet in tweetTextArray:
+	rating = analyze_text(tweet)
+	print(tweet.strip(),)
+	if (rating > 0):
+		print(" -- POSITIVE")
+	elif (rating < 0):
+		print(" -- NEGATIVE")
+	else:
+		print(" -- NEUTRAL")
