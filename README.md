@@ -11,3 +11,7 @@ Also TortoiseGit is a good GUI for Windows.
 #### Github
 In order to contribute to the repo, create a Github account and contact [Jessica Garson](https://github.com/JessicaGarson) for contributor access.
 
+#### Python IDE
+https://code.google.com/p/pythonxy/wiki/Downloads
+
+A decent IDE for Python.
