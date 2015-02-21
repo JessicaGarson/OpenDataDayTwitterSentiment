@@ -25,4 +25,4 @@ class CustomStreamListener(tweepy.StreamListener):
         return True # Don't kill the stream
 
 sapi = tweepy.streaming.Stream(auth, CustomStreamListener())
-sapi.filter(track=['#airstrike #isis'])
+sapi.filter(track=['#obamalovesamerica'])
