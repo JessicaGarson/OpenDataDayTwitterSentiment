@@ -17,3 +17,4 @@ searchterm = "#airstrike"
 searchcount = 10000
 
 searches = twitter_api.search.tweets(q= searchterm, count = searchcount)
+tweetTextArray = [s['text'] for s in searches['statuses']]
